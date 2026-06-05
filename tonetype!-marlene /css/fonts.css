@@ -1,0 +1,8 @@
+@font-face {
+    font-family: block;
+    src: url("../tonetype.otf")
+}
+@font-face {
+    font-family: standard;
+    src: url("standard-bold.otf")
+}

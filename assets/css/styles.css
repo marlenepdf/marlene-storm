@@ -1,0 +1,290 @@
+/* 
+    CSS RESET
+ */
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    width: 100%;
+   
+}
+
+
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "OpenRunde-Semibold";
+    src: 
+        url(../fonts/OpenRunde-Semibold.otf)
+        
+    }
+
+    @font-face {
+        font-family: "OpenRunde-Regular";
+        src: 
+            url(../fonts/OpenRunde-Regular.otf)
+            
+        }
+
+
+/* 
+    STYLING 
+*/
+
+p {
+    font-family: "OpenRunde-Regular";
+    font-size: 24px;
+    color: black;
+    
+   
+}
+
+h1 {
+    font-family: "OpenRunde-Semibold";
+    font-size: 24px;
+    color: black; 
+}
+a {
+    font-family: "OpenRunde-Semibold";
+    font-size: 24px;
+    color: black;
+   
+}
+
+.pictures  {
+    height: 63vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.pictures  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+}
+
+img {
+    width: auto;
+    height: 63vh;
+}
+
+
+
+
+.projects {
+    height: 100vh;
+    position: fixed;
+    margin: 0px;
+    z-index: 1000;
+
+}
+
+.projects ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.projects .active  a{
+   
+    color:rgb(190, 217, 215);
+    text-shadow: 3px 3px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+
+
+/* .projects li {
+   background-color: rgb(190, 190, 190);
+   list-style: none;
+    width: fit-content;
+    height: fit-content;
+    
+    align-content: center;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+   
+} */
+
+
+.projects a {
+    color: azure;
+    text-shadow: 3px 3px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+
+.info {
+    background-color: rgb(221, 254, 247);
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+   align-items: flex-end;
+   margin-right: 2vw;
+   padding-bottom: 2vh;
+
+}
+
+.info ul {
+    margin: 20px;
+    width: 50vw;
+}
+
+
+
+.info img {
+    height: 25vh;
+}
+
+.about {
+    background-color: rgb(221, 254, 247);
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+   align-items: flex-end;
+   margin-right: 2vw;
+   padding-bottom: 2vh;
+
+}
+
+.about ul {
+    margin: 20px;
+    width: 32vw;
+    position: relative;
+}
+
+.about a {
+   font-family: "OpenRunde-Regular" ;
+}
+
+.about img {
+    height: 25vh;
+}
+
+
+
+.Drehung {
+    right: 0vw;
+   
+    height: 50vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+   align-items: flex-end;
+}
+
+
+
+@media (max-width: 900px) {
+    .projects {
+        height: 63vh;
+    }
+    .info ul {
+        width: 100vw;
+    }
+    .about ul {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects {
+        height: 63vh;
+    }
+    .info ul {
+        width: 100vw;
+    }
+    .info ul p {
+        font-size: 16px;
+    }
+    .info img {
+        height: 20vh;
+    }
+    a {
+        font-size: 16px;  
+    }
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,229 @@
+@media print {
+@font-face {
+    font-family: snippet;
+    src: url(../snippet.otf);
+}
+@font-face {
+    font-family: Standard;
+    src: url(../standard-book-italic.otf);
+   } 
+@font-face {
+    font-family: block;
+    src: url(../tonetype!.otf);
+   } 
+    /* Size and marin for all pages ------------- */
+    @page {
+        size: 210mm 297mm;
+        margin-top: 0mm;
+        margin-bottom: 0mm;
+        font-family: "Times";
+    }  
+
+
+    /* LEFT PAGES -------------------------------- */
+
+    @page:left {
+        margin-left: 0mm;
+        margin-right: 0mm;
+        @left-top {
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: left;
+        }
+    }
+
+
+    /* RIGHT PAGES -------------------------------- */
+
+    @page:right {
+        margin-left: 0mm;
+        margin-right: 0mm;
+        @right-top {
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: right;
+        }
+    }
+
+
+
+    /* BLANK PAGES -------------------------------- */
+
+    @page:blank {
+        @left-top { content: none; }
+        @bottom-center { content: none; }
+        @right-top { content: none; }
+    }
+
+
+
+    /* COVER ------------------------------------- */
+
+    @page:first{
+        @right-top { content: none; }
+    }
+
+    
+    
+    /* SECTION BREAKS -------------------------------- */
+
+    .chapter {
+        break-before: right;
+    }
+
+
+
+    /* CONTENT --------------------------------------- */
+
+   
+.play {display: none;}
+
+.buttonSeite2 {display: none;}
+    .button{
+        display: none;
+    }    
+    
+    .container {
+        border: none;
+        border-width: 0;
+        margin-left: 0cap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+  
+    
+  
+     .Vorne {
+        z-index: 100;
+        height: 105mm;
+        width: 148mm;
+        position: absolute;
+        size: 50%;
+        display: none;
+     
+   
+     }
+      }
+      .Seite2 {
+        height: 155mm;
+        width: 105mm;
+        z-index: 1000;
+        
+        font-size: 50px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-family: block;
+        
+        text-align: left;
+        position: absolute;
+        right: 50px;
+        bottom: 0px;
+        padding: 3%;
+        word-wrap: break-word;
+        margin-top: 0%;
+      }
+   
+  .zine {
+    width: auto;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    position: relative;
+    z-index: 300;
+  }
+
+
+      .Seite2 .Bild {
+rotate: 90deg;
+height: 200px;
+width: auto;
+left: -5%;
+  position: absolute;
+  bottom: 30%;
+  display: none;
+  }
+
+
+      
+
+.containerabc {
+    z-index: 100;
+    height: 148mm;
+    width: 105mm;
+    border: 1px dotted red;
+    
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+    
+     .abc {
+        position: absolute;
+        rotate: -90deg;
+        height: 106mm;
+  width: auto;
+  right: -23mm;
+  top: 21mm;
+  display: none;
+      }
+     
+      .zahlen {
+        position: absolute;
+        rotate: 90deg;
+        height: 106mm;
+  width: auto;
+  left: -23mm;
+  top: 21mm;
+  display: none;
+      }
+
+      
+      .Hinten {
+        height: 704m;
+        width: 105mm;
+       background-color: white;
+        
+        font-size: 435px;
+        writing-mode: vertical-rl;
+        font-family: block;
+        color: black;
+        padding-bottom: 5%;
+        line-height: 104%;
+        position: absolute;
+        top: 537px;
+        display: none;
+      }
+
+      
+      .Cover {
+        height: 74mm;
+        width: 105mm;
+        
+        font-size: 395px;
+        writing-mode: vertical-rl;
+        font-family: block;
+        color: black;
+        position: absolute;
+        bottom: 0px;
+        display: none;
+      }
+
+      .info {
+        display: none;
+      }
+
+    /* EXAMPLE
+    h1 {
+        font-size: 16pt;
+        line-height: 0.9;
+        margin-bottom: 1mm;
+    }
+    */
+
+
+

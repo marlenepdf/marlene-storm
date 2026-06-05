@@ -1,0 +1,263 @@
+/* 
+    CSS RESET
+ */
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    width: 100%;
+    mix-blend-mode: difference;
+}
+
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Office";
+    src: 
+        url(../fonts/OfficeCodePro-LightItalic.otf)
+        
+    }
+
+
+/* 
+    STYLING 
+    */
+
+
+:root {
+    font-size: 12px;
+}
+
+
+body {
+    
+  background-color: rgb(6, 19, 22);
+  margin: 24px 24px 16px 24px;
+}
+
+
+div {
+    display: flex;
+    height:fit-content;
+   
+    
+}
+
+
+
+
+h1,
+h2,
+p {
+    font-family: "Office";
+    font-size: 1rem;
+    color: white;
+}
+
+ol {
+    display: flex;
+    gap: 0mm;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  
+  justify-content: center;
+}
+
+/* .text {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease;
+ 
+} */
+
+.text.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  opacity: 1;
+  transition: width 0.3s ease;
+}
+
+.korn {
+  width: 3%;
+  /* animation: rotate-animation 13s infinite linear; */
+  position: relative;
+}
+
+
+.korn img,
+.specialkorn img {
+  width: 100%;
+  /* animation: rotate-animation 13s infinite linear; */
+  position: relative;
+  transition: transform 1s;
+  
+}
+
+.specialkorn {
+    width: 3%;
+		position: relative;
+	}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+img:hover {
+    /* transform: rotate(10deg); */
+    transform: scale(15);
+}
+
+.specialkorn:active {
+    transform: rotate(4320deg);
+    transition: transform 3s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+
+    
+@media only screen and (max-width: 900px) {
+  h1,
+  h2,
+  p {
+      font-family: "Office";
+      font-size: 1rem;
+      color: white;
+  }
+
+  .korn {
+    width: 6%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+  }
+
+  .korn img {
+    width: 100%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+    
+  }
+  
+  .specialkorn {
+      width: 6%;
+      position: relative;
+    }
+
+    .text.visible {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      transition: width 0.3s ease;
+    }  
+}
+
+
+    
+@media only screen and (max-width: 500px) {
+  h1,
+  h2,
+  p {
+      font-family: "Office";
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+  }
+
+  .korn {
+    width: 10%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+  }
+
+  .korn img {
+    width: 100%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+    
+  }
+  
+  .specialkorn {
+      width: 10%;
+      position: relative;
+    }
+
+    .text.visible {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      transition: width 0.3s ease;
+      flex-wrap: nowrap;
+    }  
+}
+
+@media only screen and (min-width: 1500px) {
+  h1,
+  h2,
+  p {
+      font-family: "Office";
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+  }
+
+  .korn {
+    width: 3%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+  }
+
+  .korn img {
+    width: 100%;
+    /* animation: rotate-animation 13s infinite linear; */
+    position: relative;
+    
+  }
+  
+  .specialkorn {
+      width: 3%;
+      position: relative;
+    }
+
+    .text.visible {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      transition: width 0.3s ease;
+      flex-wrap: nowrap;
+    }  
+}
+
+
+

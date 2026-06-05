@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>tonetype!</title>
+
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/handlers.js"></script>
+    <script src="Seite2.js"></script>
+
+
+    <link href="css/pagedjs/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/pagedjs/pagedjs.css" rel="stylesheet" type="text/css">
+
+
+
+    <link id="style-screen" href="css/screen.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+        @font-face {
+            font-family: Standard;
+            src: url(../standard-book-italic.otf);
+        } 
+
+        #playButton {
+            z-index: 300;
+            position: absolute;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-left: 120px;
+            cursor: pointer;
+            background: none;
+            color: #1b0091;
+            border: none;
+            font-family: Standard;
+        }
+        #playButton:disabled {
+            background: none;
+            cursor: pointer;
+            opacity: 50%;
+        }
+        #audioContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttonSeite2">
+        <button class="buttoninnen" onclick="window.location.href='index.html'">live</button>
+    </div>
+
+    <button class="play" id="playButton" disabled>play</button>
+
+    <div class="Zine"><img class="zine" src="ZineHoffentlich.png"></div>
+    
+    <div class="container">
+        <div id="Satz" class="Seite2" contenteditable="true">
+            <p id="hierUnserText"></p>
+            <div id="hierUnserBild"></div>   
+        </div>
+    </div>
+
+    <div class="background"></div>
+
+    <div class="info">
+        Hier kannst du mit vertonten Buchstaben ein bisschen Spaß haben! <br>
+        Du hast die Möglichkeiten live mit den Buchstaben zu tippen oder, wenn du zu 'record' wechselst, etwas von dir Geschriebenes abspielen zu lassen, indem du 'play' drückst.<br>
+        Alle Buchstaben wurden in einem Notensystem geschrieben, die Vertonung basiert auf einzelnen Bausteinen, die jeweils in Groß- und Kleinbuchstaben vorkommen. Vielleicht kannst du sie ja raushören und finden?<br>
+        Du kannst dir auch, wenn du auf den 'make book' Button drückst, ein kleines Zine mit Typeface Übersicht und ein paar weiteren Infos, ausdrucken.<br>
+        Viel Spaß beim Tippen! <br> <br>
+    </div>
+
+    <div id="audioContainer"></div>
+
+</body>
+</html>

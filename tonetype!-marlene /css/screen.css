@@ -1,0 +1,175 @@
+@font-face {
+    font-family: block;
+    src: url(../tonetype!.otf);
+   } 
+   @font-face {
+    font-family: Standard;
+    src: url(../standard-book-italic.otf);
+   } 
+   
+   html, body {
+    height: 100%;
+  }
+  
+  body {
+     /* Beispiel: Seite ist 1000 Pixel hoch */
+   height: -25vh;
+     margin: 0;
+    padding: 0;
+  }
+   
+   * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .hash {
+        color: #1b0091; 
+        font-size: 110px;
+        position: relative;
+        bottom: 0px;
+        margin: 20px;
+        opacity: 650%;
+    }
+
+    .button {
+        
+        position: absolute;
+        z-index: 400;
+        width: 6%; /* Passe die Breite an, die Höhe wird proportional skaliert */
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+      
+      .button img {
+        width: 100%;
+        height: auto; /* Stellt sicher, dass das Bild proportional skaliert wird */
+      }
+
+    .buttonSeite2 {
+        position: absolute;
+        z-index: 400;
+        width: 6%; /* Passe die Breite an, die Höhe wird proportional skaliert */
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .buttonSeite2 img {
+        width: 100%;
+        height: auto; 
+    }
+
+.buttoninnen {
+    font-family: Standard;
+    background-color: transparent;
+    position: absolute;
+    width: 50px;
+    font-size: 24px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: none;
+    text-align: center;
+    color: #1b0091;
+    z-index: 500;
+}
+
+    
+    
+    .background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(249, 249, 123);
+        z-index: 0;
+        
+    }
+.Vorne {
+    display: none;
+}
+
+    .abc {display: none;}
+    .zahlen {display: none;}
+    
+    .Bild {
+        z-index: 1000;
+        padding-right: 0%;
+        size: 40%;
+        position: absolute; /* Absolut positioniert relativ zum Container */
+        bottom: -40vh; /* An den unteren Rand des Containers */
+        right: 0%; /* An den rechten Rand des Containers */
+        width: auto; /* Breite des Bildes, kannst du nach Bedarf anpassen */
+        height: 600px;
+        overflow: hidden;
+        
+
+
+    }
+    
+.Zine {
+    display: none;
+}
+
+    .Seite2 {
+        z-index: 2;
+        position: absolute;
+        background: none;
+        color: #1b0091;
+        font-size: 160px;
+        top: 53%;
+        left: 50%;
+        width: 95%;
+        height: 60%;
+        bottom: 30%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        text-align: center;
+        font-family: block;
+        line-height: 120%;
+        word-wrap: break-word;
+        word-spacing: 5%;
+    }
+
+    [contenteditable] {
+        outline: 0px solid transparent;
+      }
+ 
+.Cover {
+    display: none;
+}
+.Seite1 {
+    display: none;
+}
+.Seite3 {
+    display: none;
+}
+.Seite4 {
+    display: none;
+}
+.Seite5 {
+    display: none;
+}
+.Seite6 {
+    display: none;
+}
+.Hinten {
+    display: none;
+}
+
+    .info {
+        z-index: 3;
+        position: absolute;
+        color: #1b0091;
+        font-size: 18px;
+        bottom: -23vh;
+        font-family: Standard;
+        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 660px;
+        margin-bottom: -15px;
+    
+    }    
+
