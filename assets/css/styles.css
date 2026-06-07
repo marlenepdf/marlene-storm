@@ -72,7 +72,7 @@ a {
 }
 
 .pictures  {
-    height: 63vh;
+    height: 63%;
     position: absolute;
     z-index: 1;
 }
@@ -94,7 +94,7 @@ img {
 
 
 .projects {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     margin: 0px;
     z-index: 1000;
