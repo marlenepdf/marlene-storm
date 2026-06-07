@@ -102,7 +102,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 2vh;
     
     
     
@@ -188,9 +188,9 @@ img {
 .info {
     background-color: rgb(221, 254, 247);
     width: 100vw;
-    height: 50vh;
+    height: 37vh;
     position: fixed;
-    bottom: 0;
+    top:63vh;
     display: flex;
     flex-direction: row-reverse;
    align-items: flex-end;
@@ -200,7 +200,7 @@ img {
 }
 
 .info ul {
-    margin: 20px;
+    margin: 2vh;
     width: 50vw;
 }
 
@@ -225,7 +225,7 @@ img {
 }
 
 .about ul {
-    margin: 20px;
+    margin: 2vh;
     width: 32vw;
     position: relative;
 }
@@ -272,19 +272,19 @@ img {
         width: 100vw;
     }
     .info ul p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .info img {
         height: 20vh;
     }
     a {
-        font-size: 16px;  
+        font-size: 14px;  
     }
     h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
