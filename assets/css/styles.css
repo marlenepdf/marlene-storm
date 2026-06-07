@@ -94,7 +94,7 @@ img {
 
 
 .projects {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     margin: 0px;
     z-index: 1000;
