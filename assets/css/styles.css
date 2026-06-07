@@ -295,7 +295,11 @@ img {
         font-size: 14px;
     }
     .info {
-        padding-bottom: 7%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+    }
+    .about {
+        padding-bottom: 3%;
         padding-left: 5%;
     }
 }
