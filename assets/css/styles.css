@@ -193,7 +193,11 @@ img {
 }
 
 .about a {
-   font-family: "OpenRunde-Regular" ;
+   font-family: "OpenRunde-Semibold" ;
+}
+
+.about p {
+   font-family: "OpenRunde-Semibold" ;
 }
 
 .about img {
